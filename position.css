@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#first {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    /* position: absolute; dedigimizde bunu sayfada hareket ettirebiliyoruz, 
+    kirmizi kutu o satirda yokmus gibi olur ve sonrasinda saga sola hareket ettirebiliriz.
+     bunun icinde left ve right: kullanilir 200px gibi */
+    left: 200px;
+}
+
+#second {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}
+
+#third {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+
+    
+}

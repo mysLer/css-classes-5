@@ -1,0 +1,19 @@
+.container {
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    /* overflow: visible; */
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow: auto;
+    
+    /* egerbir yazi bir kutunun icinden border in icinden tasiyorsa;
+    yada tasmasini istiyorsak overflow; visible; yapmaliyiz 
+    visible= yaziyi tasirarak gosterir gostertir
+    hidden = border dan artan kutudan artan yaziyi gizler
+    scroll = border dan artan kutudan artan yaziyi hareket ettirterek gostertir. 
+    x ve y ekseninde hareket ettirmeye firsat verir.
+    auto = yaptigimizda sadece x ekseninde hareket ettirmeye olanak tanir */
+
+
+}

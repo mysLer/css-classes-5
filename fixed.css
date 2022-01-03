@@ -1,0 +1,29 @@
+body {
+    height: 2000px;
+}
+
+#Document {
+    background-color: aquamarine;   
+    position: sticky; 
+    /* position: sticky; dedigimizde bunu üst karakter olarak yapmis oluyoruz
+    üst karakter yapmak icin sticky kullaniyoruz.
+    bu kakteri yapistirmis oluyoruz nereye hareket etirrirsek oraya gider */
+    top: 0;
+    
+    
+}
+
+#fixed {
+    width: 100px;
+    height: 100px;
+    background-color: #ffc0cb;
+    position: fixed;
+    top: 25%;
+    left: 100px;
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+}
