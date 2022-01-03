@@ -1,0 +1,56 @@
+.container {
+    width: 80%;
+    margin: auto;
+    border: 2px solid gray;
+    border-radius: 20px;
+    /* cercecveyi oval yapiyor, border radius */
+}
+
+#html-container, #css-container {
+    padding: 5vw;
+    margin: 5vw;
+    /* border: 2px solid red; */
+    /* calismalarimizi yaparken border vererek yaparsak daha rahat görürüz,
+    bu yüzden border verdik */
+    
+}
+
+h1 {
+    text-align: center;
+    color: palevioletred;
+}
+
+p {
+    text-align: justify;
+}
+
+/* #description-html {
+    clear: left;
+    yazinin yerinin degismemesi icin saga sola gitmemesi icin clear: komutu kullaniliyor;
+}
+
+#description-css {
+    clear: right;
+    bu komutlari pek önermiyoruz
+    yazinin yerinin degismemesi icin saga sola gitmemesi icin clear: komutu kullaniliyor;
+} */
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    /* resimlere ovallik vermek icin border-radius: 30px;  komutunu kullaniyoruz. */
+}
+#html {
+    float: left;
+    /* yazilari resmin yanina, resmin sagina tasimak icin float: left: komutunu kullaniyoruz */
+    margin-right: 25px;
+}
+
+#css {
+    border-radius: 150px;
+    float: right;
+    /* yazilari resmin yanina, resmin soluna tasimak icin float: right: komutunu kullaniyoruz */
+
+    margin-left: 25px;
+}
