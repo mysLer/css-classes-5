@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('./images/img-03.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* arka plana resım ekleme burdan yapılıyor, 
+    eger resimin resmin tekrar etmesini istemiyorsak, sadece 1 adet resim olsun istiyorsak
+    o zaman  background-repeat: no-repeat yapmaliyiz.
+    eger body deki bir yaziyi yada p deki yaziyi veya istedigimiz bir seyi flue yapmak saydam yapmak istiyorsak, 
+    o zamanda background-size: cover;  */
+}
+
+.container {
+    width: 75%;
+    margin: 20% auto;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 20px;
+    opacity: 0.2;
+    transform: rotate(4deg);
+    /* yaziya yada bir seye egim vermek icin transform: rotate: (4deg); */
+
+}
+
+.container:hover {
+    opacity: 0.6;
+}
+
+p {
+    padding: 2vw;
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 2rem;
+    font-style: italic;
+    font-family: 'The Nautigal', cursive;
+}
+/* img {
+    width: 250px;
+    opacity: 0.6;
+} */
