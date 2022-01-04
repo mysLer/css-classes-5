@@ -1,0 +1,30 @@
+#first-div {
+    background-color: burlywood;
+    height: 20px;
+    width: 500px;
+    margin: 2vh auto;
+    border: 5px solid red;
+    outline-style: dashed;
+    outline-width: 2px;
+    outline-color: cadetblue;
+    outline-offset: 15px;
+    outline: 2px dotted red;
+    
+}
+
+#second-div {
+    background-color: cadetblue;
+    height: 20px;
+    /* max-width: 500px;     */
+    min-width: 500px;
+    margin: auto;
+}
+
+input {
+    margin: 20px;
+    /* outline: none; */
+    /* border'a cok benziyor. kutucugun üstüne gittigimizde renginin degismesini istemiyorsak , outline: none; yapmaliyiz */
+    /* outline: 2px solid purple; */
+    /* bu bir kutu icinde imleci var, üstüne gittigimizde otomatik renk degisiyor,
+    renkini kendimiz belirlemek istiyorsak outline: 2px solid red; gibi bir komut girmeliyiz */
+}
