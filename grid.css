@@ -28,37 +28,62 @@
     /* burda iki satiri 150pxc olarak büyüttük, 
     sadece birinin büyümesini istiyorsak sadece bir adet grid-template-rows: 150px; yapariz */
 
-    grid-gap: 30px;
+    grid-auto-rows: 150px;
+
+    grid-gap: 15px;
     /* grid lerin  (kutularin tablolardaki hücrelerin arasina) arasina bosluk vermek icin grid-gap  30px gibi kullaniyoruz */
 
-    grid-template-areas: "sidebar";
+    /* grid-template-areas: "sidebar"; */
 
-    grid-template-areas: 
+    /* grid-template-areas: 
     "header header"
     "sidebar content1"
     "sidebar content2"   
-    ;
+    ; */
 
     /* üstteki   "header header", "sidebar content1", "sidebar content2" diye girdiklerimiz,
      tablo olusturmak icin bir taslak, kimi nereye almak istiyorsak,
     asagida .grit-item1 lerin icerine verdigim isim ney ise tabloda gorunen yere o gelir. 
     
     Örnegin; conten1 in yerine hangi hücrenin gelmesini istiyorsam o zaman ,
-    o zaman grid-area: content1; komutunu bu hücre icin yazmaliyiz. */
+    o zaman grid-area: content1; komutunu bu hücre icin yazmaliyiz. 
+    hangi hucreyi uzatmak istiyorsak o hucreyi cagirip grid-area: ...; vermelyiz
+    */
+    
 }
 
 
 .grid-item-1 {
-    grid-area: header;
+    /* grid-area: header; */
+    /* Sütunlar icin; veya buna grid-column-start: 1  den grid-column-end: 3; gibi yazip kisa yolla yapabiliriz, veya (grid-column: 1 / 3 ;) seklinde de yazaybilirz  */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
 }
 
 .grid-item-2 {
-    grid-area: sidebar;
+    /* grid-area: sidebar; */
+    /* Satirlar icin; grid-row-start: 2 den baslatip grid-row-end:4; yazip kisa yol olarak yapabiliriz, alternatif cöntem yol; */
+    /* veya kisa yol olarak  " grid-row: 2 / 4  " seklinde yazarak daha hizli bir sekilde satir veya sütun belirleyebiliriz     */
+    /* grid-row: 2 / 4; */
+
+    /* grid-area: row-start(satirin basladigi yer) / column-start(s+tunun basladigi yer) / row-end (satirin bittigi yer) / column-end (sutunun bittigi yer); */
+
+    grid-area: 2 / 1 / 4 / 3;
+    
 }
 
 .grid-item-3 {
-    grid-area: content2;
+    /* grid-area: content2; */
+    grid-row: span 2;
 }
 .grid-item-4 {
-    grid-area: content1;
+    /* grid-area: content1; */
+    grid-area: 4 / 2 / 6 / 3 ;
+    /* bunu deneme yanilma yoluylada bulabiliriz, rakam girip satir sutun nerede birlesiyor bakariz */
+}
+
+.grid-item-5 {
+    grid-column: span 2;
+    /* grid i kutuyu hucreyi  2 tane sütun olarak yapmak icin  bu komut (grid-column: span 2;) kullanilir */
 }
