@@ -1,0 +1,38 @@
+#header, #nav, #article, #ads, #footer {
+    background-color: yellow;
+    padding: 20px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: 1px solid white;
+
+
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-columns: 9fr 3fr 2fr;
+    grid-gap: 5px;
+    height: 80vh;
+    grid-template-areas: 
+    "header header header"
+    "article nav ads"
+    "footer nav ads"
+    ;
+
+
+}
+
+#header {
+    grid-area: header;
+
+}
+
+#nav {
+    grid-area: nav;
+}
+
+#ads {
+    grid-area: ads;
+}

@@ -1,0 +1,64 @@
+.grid-item {
+    background-color: #97cba9;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    padding: 20px;
+    color: antiquewhite;
+}
+
+.grid-item:nth-child(odd) {
+    background-color: #668ba4;
+
+    /* tek sayida olanlarin rengini ayni yapmak icin nth-child(odd) komutunu yaziyoruz */
+} 
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 150px 300px;
+    /* Satirlara sütünlara bolmek icin grid-template-columns: 200px 300px; komutunu kullaniyoruz
+    bunlara oranda verebiliriz bunuda 1fr  2fr gibi... */
+    /* grid-template-columns: 25% 50% 25%; */
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* yada 4 kere tekrar etmesini istiyorsak örnegin 150px olarak 4 defa tekrar etsin;
+    bunun icinde; */
+    /* grid-template-columns: repeat(4, 150px); */
+    /* grid-template-columns: 150px 150px; */
+
+    /* grid-template-rows: 150px 150px; */
+    /* burda iki satiri 150pxc olarak büyüttük, 
+    sadece birinin büyümesini istiyorsak sadece bir adet grid-template-rows: 150px; yapariz */
+
+    grid-gap: 30px;
+    /* grid lerin  (kutularin tablolardaki hücrelerin arasina) arasina bosluk vermek icin grid-gap  30px gibi kullaniyoruz */
+
+    grid-template-areas: "sidebar";
+
+    grid-template-areas: 
+    "header header"
+    "sidebar content1"
+    "sidebar content2"   
+    ;
+
+    /* üstteki   "header header", "sidebar content1", "sidebar content2" diye girdiklerimiz,
+     tablo olusturmak icin bir taslak, kimi nereye almak istiyorsak,
+    asagida .grit-item1 lerin icerine verdigim isim ney ise tabloda gorunen yere o gelir. 
+    
+    Örnegin; conten1 in yerine hangi hücrenin gelmesini istiyorsam o zaman ,
+    o zaman grid-area: content1; komutunu bu hücre icin yazmaliyiz. */
+}
+
+
+.grid-item-1 {
+    grid-area: header;
+}
+
+.grid-item-2 {
+    grid-area: sidebar;
+}
+
+.grid-item-3 {
+    grid-area: content2;
+}
+.grid-item-4 {
+    grid-area: content1;
+}
